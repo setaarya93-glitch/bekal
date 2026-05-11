@@ -16,6 +16,9 @@
     RewriteRule ^ index.php [L]
 </IfModule>
 
+# Disable directory browsing
+Options -Indexes
+
 # PHP Settings
 <IfModule mod_php.c>
     php_value upload_max_filesize 64M
@@ -37,4 +40,11 @@
     <FilesMatch "^(composer\.(json|lock)|package\.json|webpack\.mix\.js|gulpfile\.js)$">
         Require all denied
     </FilesMatch>
+</IfModule>
+
+# Protect sensitive directories
+<IfModule mod_authz_core.c>
+    <IfModule mod_rewrite.c>
+        RewriteRule ^(app|bootstrap|config|database|resources|routes|storage|vendor)/ - [F,L]
+    </IfModule>
 </IfModule>
