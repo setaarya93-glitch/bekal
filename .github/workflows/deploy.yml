@@ -33,6 +33,18 @@ jobs:
       run: |
         # Copy .env.example to .env for deployment
         cp .env.example .env
+        # Create required storage directories
+        mkdir -p storage/framework/views
+        mkdir -p storage/framework/cache
+        mkdir -p storage/framework/sessions
+        mkdir -p storage/logs
+        mkdir -p bootstrap/cache
+        # Create .gitkeep files to ensure directories are tracked
+        touch storage/framework/views/.gitkeep
+        touch storage/framework/cache/.gitkeep
+        touch storage/framework/sessions/.gitkeep
+        touch storage/logs/.gitkeep
+        touch bootstrap/cache/.gitkeep
         # Remove development files
         rm -rf .git .github tests phpunit.xml .env.testing
         
@@ -55,9 +67,6 @@ jobs:
           **/phpunit.xml
           **/*.md
           **/storage/logs/**
-          **/storage/framework/cache/**
-          **/storage/framework/sessions/**
-          **/storage/framework/views/**
         dangerous-clean-slate: false
         
     - name: Post deployment notification
