@@ -27,6 +27,18 @@ Route::get('/dashboard/crm', function () {
     return view('dashboard.crm');
 });
 
+Route::get('/dashboard/crm/leads', function () {
+    return view('dashboard.crm.leads');
+});
+
+Route::get('/dashboard/crm/pipeline', function () {
+    return view('dashboard.crm.pipeline');
+});
+
+Route::get('/dashboard/crm/customers', function () {
+    return view('dashboard.crm.customers');
+});
+
 Route::get('/dashboard/pos', function () {
     return view('dashboard.pos');
 });
