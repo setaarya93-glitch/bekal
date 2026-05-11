@@ -43,6 +43,18 @@ Route::get('/dashboard/pos', function () {
     return view('dashboard.pos');
 });
 
+Route::get('/dashboard/pos/kasir', function () {
+    return view('dashboard.pos.kasir');
+});
+
+Route::get('/dashboard/pos/transactions', function () {
+    return view('dashboard.pos.transactions');
+});
+
+Route::get('/dashboard/pos/promo', function () {
+    return view('dashboard.pos.promo');
+});
+
 Route::get('/dashboard/inventory', function () {
     return view('dashboard.inventory');
 });
