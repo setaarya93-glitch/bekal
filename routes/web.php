@@ -58,3 +58,15 @@ Route::get('/dashboard/pos/promo', function () {
 Route::get('/dashboard/inventory', function () {
     return view('dashboard.inventory');
 });
+
+Route::get('/dashboard/inventory/stock', function () {
+    return view('dashboard.inventory.stock');
+});
+
+Route::get('/dashboard/inventory/masuk', function () {
+    return view('dashboard.inventory.masuk');
+});
+
+Route::get('/dashboard/inventory/keluar', function () {
+    return view('dashboard.inventory.keluar');
+});
