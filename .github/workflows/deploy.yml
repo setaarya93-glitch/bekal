@@ -19,10 +19,6 @@ jobs:
         php-version: '8.3'
         extensions: mbstring, xml, ctype, json, tokenizer, bcmath, curl, mysql, pdo, pdo_mysql, zip, gd, intl
         
-    - name: Install Composer dependencies
-      run: |
-        composer install --no-dev --optimize-autoloader --no-interaction
-        
     - name: Setup Node.js
       uses: actions/setup-node@v4
       with:
@@ -37,7 +33,6 @@ jobs:
       run: |
         # Copy .env.example to .env for deployment
         cp .env.example .env
-        php artisan key:generate --force
         # Remove development files
         rm -rf .git .github tests phpunit.xml .env.testing
         
@@ -53,6 +48,7 @@ jobs:
           **/.git*
           **/.git*/**
           **/node_modules/**
+          **/vendor/**
           **/tests/**
           **/.env.local
           **/.env.testing
