@@ -1,0 +1,50 @@
+/* Tailwind CSS - Production Build */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base styles */
+@layer base {
+  * {
+    border-color: theme('colors.gray.200', #e5e7eb);
+  }
+  
+  body {
+    font-family: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif;
+    line-height: 1.5;
+  }
+}
+
+/* Component styles */
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-lg font-medium transition-colors;
+  }
+  
+  .btn-primary {
+    @apply bg-blue-600 text-white hover:bg-blue-700;
+  }
+  
+  .card {
+    @apply bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-200 dark:border-gray-700;
+  }
+  
+  .sidebar-link {
+    @apply flex items-center space-x-3 px-3 py-2 rounded-lg transition-colors;
+  }
+  
+  .sidebar-link:hover {
+    @apply bg-gray-50 dark:bg-gray-700;
+  }
+  
+  .sidebar-link.active {
+    @apply bg-blue-50 text-blue-700 dark:bg-blue-900/50 dark:text-blue-300;
+  }
+}
+
+/* Utility styles */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
