@@ -70,8 +70,6 @@ jobs:
           **/phpunit.xml
           **/*.md
           **/storage/logs/**
-          **/storage/framework/cache/**
-          **/storage/framework/sessions/**
         dangerous-clean-slate: false
         
     - name: Post deployment notification
