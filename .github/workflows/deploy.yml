@@ -58,7 +58,7 @@ jobs:
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
         local-dir: ./
-        server-dir: /public_html/bekal/
+        server-dir: /public_html/sample.thedarkandbright.com/
         exclude: |
           **/.git*
           **/.git*/**
@@ -74,4 +74,4 @@ jobs:
         
     - name: Post deployment notification
       if: success()
-      run: echo "Deployment to thedarkandbright.site/public_html/bekal completed successfully!"
+      run: echo "Deployment to public_html/sample.thedarkandbright.com completed successfully!"

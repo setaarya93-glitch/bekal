@@ -20,7 +20,7 @@ Download these files from your local project:
 
 ### Step 2: Upload to Server via FTP/cPanel
 ```
-📁 public_html/bekal/
+📁 public_html/sample.thedarkandbright.com/
 ├── public/build/ ← CRITICAL - Upload this folder!
 ├── vendor/ ← Upload vendor folder
 ├── .env ← Create from .env.example
@@ -36,7 +36,7 @@ APP_NAME="Bekal"
 APP_ENV=production
 APP_KEY=base64:GENERATE_NEW_KEY_HERE
 APP_DEBUG=false
-APP_URL=http://thedarkandbright.site
+APP_URL=http://sample.thedarkandbright.com
 
 DB_CONNECTION=sqlite
 SESSION_DRIVER=file
@@ -55,13 +55,13 @@ storage/ folder: 755 (with subfolders)
 ```
 
 ### Step 6: Verify
-1. Access: http://thedarkandbright.site/
+1. Access: http://sample.thedarkandbright.com/
 2. Check CSS loaded in browser dev tools
 3. Dashboard should display with proper styling
 
 ### 🎯 If still not working:
 1. Check if `public/build/manifest.json` exists on server
-2. Check if CSS files are accessible: http://thedarkandbright.site/build/assets/app.f_D7oGJG.css
+2. Check if CSS files are accessible: http://sample.thedarkandbright.com/build/assets/app.f_D7oGJG.css
 3. Clear browser cache and reload
 
 ### 📞 Alternative: Use cPanel File Manager
