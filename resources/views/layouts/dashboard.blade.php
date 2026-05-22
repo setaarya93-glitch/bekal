@@ -20,25 +20,25 @@
         'administrasi' => [
             'label' => 'Administrasi',
             'url' => '/dashboard/administrasi',
-            'icon' => '<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>',
+            'icon' => '<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>',
             'color' => 'indigo'
         ],
         'crm' => [
             'label' => 'CRM',
             'url' => '/dashboard/crm',
-            'icon' => '<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>',
+            'icon' => '<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>',
             'color' => 'blue'
         ],
         'pos' => [
             'label' => 'POS',
             'url' => '/dashboard/pos',
-            'icon' => '<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/></svg>',
+            'icon' => '<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/></svg>',
             'color' => 'emerald'
         ],
         'inventory' => [
             'label' => 'Inventory',
             'url' => '/dashboard/inventory',
-            'icon' => '<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg>',
+            'icon' => '<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg>',
             'color' => 'amber'
         ]
     ];
@@ -149,29 +149,29 @@
     </div>
 
     {{-- Mobile Bottom Navigation Bar --}}
-    <nav class="md:hidden fixed bottom-0 inset-x-0 z-40 bg-white/95 dark:bg-gray-800/95 backdrop-blur-md border-t border-gray-200 dark:border-gray-700">
-        <div class="grid grid-cols-5 h-16 px-1">
+    <nav class="md:hidden fixed bottom-0 inset-x-0 z-40 bg-white/95 dark:bg-gray-800/95 backdrop-blur-md border-t border-gray-200 dark:border-gray-700 pb-safe">
+        <div class="grid grid-cols-5 h-20 px-1">
             {{-- Sidebar/Menu Toggle --}}
             <button @click="mobileSidebarOpen = true"
-                    class="flex flex-col items-center justify-center space-y-1 rounded-xl m-1 transition-colors text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 active:bg-gray-100 dark:active:bg-gray-700">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    class="flex flex-col items-center justify-center space-y-1.5 rounded-2xl m-1 transition-colors text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 active:bg-gray-100 dark:active:bg-gray-700">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8M4 18h16"/>
                 </svg>
-                <span class="text-xs font-medium">Menu</span>
+                <span class="text-[10px] font-bold uppercase tracking-wider">Menu</span>
             </button>
 
             {{-- Dashboard Nav Links --}}
             @foreach($dashboards as $key => $item)
                 @php
                     $isActive  = $active === $key;
-                    $navClass  = $isActive ? ($bottomNavActiveMap[$item['color']] ?? '') : 'text-gray-500 dark:text-gray-400';
+                    $navClass  = $isActive ? ($bottomNavActiveMap[$item['color']] ?? '') : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200';
                 @endphp
                 <a href="{{ url($item['url']) }}"
-                   class="flex flex-col items-center justify-center space-y-1 rounded-xl m-1 transition-all duration-200 {{ $navClass }} active:scale-95">
+                   class="flex flex-col items-center justify-center space-y-1.5 rounded-2xl m-1 transition-all duration-200 {{ $navClass }} active:scale-95">
                     <span class="transition-transform duration-200 {{ $isActive ? 'scale-110' : '' }}">
                         {!! $item['icon'] !!}
                     </span>
-                    <span class="text-xs font-medium leading-none truncate max-w-full px-1">{{ $item['label'] }}</span>
+                    <span class="text-[10px] font-bold uppercase tracking-wider truncate max-w-full px-1">{{ $item['label'] }}</span>
                 </a>
             @endforeach
         </div>
