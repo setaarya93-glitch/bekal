@@ -48,6 +48,10 @@ jobs:
         touch storage/framework/sessions/.gitkeep
         touch storage/logs/.gitkeep
         touch bootstrap/cache/.gitkeep
+        # Copy build and public assets to root for webroot flexibility
+        cp -r public/build ./
+        [ -f public/favicon.ico ] && cp public/favicon.ico ./
+        [ -f public/robots.txt ] && cp public/robots.txt ./
         # Remove development files
         rm -rf .git .github tests phpunit.xml .env.testing
         
