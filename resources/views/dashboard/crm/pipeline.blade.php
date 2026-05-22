@@ -39,7 +39,8 @@
 
     {{-- Kanban Pipeline --}}
     <div class="bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-200 dark:border-gray-700 p-6">
-        <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
+        <div class="overflow-x-auto -mx-6 px-6 pb-4">
+            <div class="grid grid-cols-5 gap-4 min-w-[1000px]">
             @foreach([
                 ['name' => 'Lead Baru', 'color' => 'gray', 'deals' => [
                     ['title' => 'PT Maju Jaya', 'value' => 50000000, 'contact' => 'Budi Santoso'],
@@ -99,6 +100,7 @@
                 </button>
             </div>
             @endforeach
+            </div>
         </div>
     </div>
 @endsection

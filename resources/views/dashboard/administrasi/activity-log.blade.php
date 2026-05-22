@@ -93,7 +93,7 @@
                         <svg class="w-5 h-5 text-{{ $iconData['color'] }}-600 dark:text-{{ $iconData['color'] }}-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="{{ $iconData['icon'] }}"/></svg>
                     </div>
                     <div class="flex-1 min-w-0">
-                        <div class="flex items-center justify-between">
+                        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 sm:gap-2">
                             <p class="text-sm font-medium text-gray-900 dark:text-white">
                                 {{ $activity['user'] }}
                                 <span class="text-gray-500 dark:text-gray-400 font-normal">{{ $activity['action'] }}</span>

@@ -59,7 +59,7 @@
             <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Hak akses untuk setiap role</p>
         </div>
         <div class="overflow-x-auto">
-            <table class="w-full">
+            <table class="w-full min-w-[700px]">
                 <thead class="bg-gray-50 dark:bg-gray-700">
                     <tr>
                         <th class="px-6 py-3 text-left text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase">Permission</th>

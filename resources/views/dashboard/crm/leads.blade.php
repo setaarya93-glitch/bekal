@@ -66,7 +66,8 @@
 
     {{-- Leads Table --}}
     <div class="bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-200 dark:border-gray-700 overflow-hidden">
-        <table class="w-full">
+        <div class="overflow-x-auto">
+            <table class="w-full min-w-[900px]">
             <thead class="bg-gray-50 dark:bg-gray-700">
                 <tr>
                     <th class="px-6 py-4 text-left text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase">Lead</th>
@@ -133,5 +134,6 @@
                 @endforeach
             </tbody>
         </table>
+        </div>
     </div>
 @endsection

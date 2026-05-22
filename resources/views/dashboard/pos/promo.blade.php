@@ -103,7 +103,7 @@
             <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Riwayat Promo</h3>
         </div>
         <div class="overflow-x-auto">
-            <table class="w-full">
+            <table class="w-full min-w-[800px]">
                 <thead class="bg-gray-50 dark:bg-gray-700">
                     <tr>
                         <th class="px-6 py-3 text-left text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase">Promo</th>
